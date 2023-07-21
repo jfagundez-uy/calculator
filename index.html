@@ -34,24 +34,23 @@
         }
 
         input[type="number"] {
-            width: 60%;
+            width: 45%;
             padding: 10px;
             font-size: 16px;
             border: 1px solid #ccc;
             border-radius: 5px;
             display: inline-block;
             vertical-align: middle;
-            margin-right: 10px;
         }
 
         .value-box {
-            display: inline-block;
-            vertical-align: middle;
-            width: 30%;
+            width: 45%;
             background-color: #f1f1f1;
             padding: 10px;
             border: 1px solid #ccc;
             border-radius: 5px;
+            display: inline-block;
+            vertical-align: middle;
             text-align: center;
             font-size: 16px;
             color: #333;
@@ -94,10 +93,12 @@
         <h2>Calculadora de Puntaje de Examen</h2>
         <label for="correctCount">Cantidad de Respuestas Correctas:</label>
         <input type="number" id="correctCount" placeholder="Ingrese la cantidad">
-        <span class="value-box" id="correctValue">Valor: 0</span>
+        <label for="correctValue">Valor de Respuestas Correctas:</label>
+        <input type="number" id="correctValue" placeholder="Ingrese el valor">
         <label for="incorrectCount">Cantidad de Respuestas Incorrectas:</label>
         <input type="number" id="incorrectCount" placeholder="Ingrese la cantidad">
-        <span class="value-box" id="incorrectValue">Valor: 0</span>
+        <label for="incorrectValue">Valor de Respuestas Incorrectas:</label>
+        <input type="number" id="incorrectValue" placeholder="Ingrese el valor">
         <button onclick="calculateScore()">Calcular Puntaje</button>
         <br>
         <h3>Resultado:</h3>
@@ -120,8 +121,6 @@
             }
 
             document.getElementById('finalScore').textContent = finalScore;
-            document.getElementById('correctValue').textContent = `Valor: ${scoreCorrect}`;
-            document.getElementById('incorrectValue').textContent = `Valor: ${scoreIncorrect}`;
         }
     </script>
 </body>
