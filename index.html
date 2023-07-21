@@ -25,6 +25,11 @@
             margin-bottom: 20px;
         }
 
+        h3 {
+            color: #666;
+            text-align: left;
+        }
+
         label {
             display: block;
             margin-top: 10px;
@@ -34,17 +39,18 @@
         }
 
         input[type="number"] {
-            width: 22%;
+            width: 45%;
             padding: 10px;
             font-size: 16px;
             border: 1px solid #ccc;
             border-radius: 5px;
             display: inline-block;
             vertical-align: middle;
+            margin-right: 10px;
         }
 
         .value-box {
-            width: 22%;
+            width: 45%;
             background-color: #f1f1f1;
             padding: 10px;
             border: 1px solid #ccc;
@@ -72,11 +78,6 @@
             background-color: #45a049;
         }
 
-        h3 {
-            margin-top: 30px;
-            color: #444;
-        }
-
         p {
             margin: 10px 0;
             color: #666;
@@ -91,13 +92,15 @@
 <body>
     <div class="calculator">
         <h2>Calculadora de Puntaje de Examen</h2>
-        <label for="correctCount">Cantidad de Respuestas Correctas:</label>
+        <h3>Preguntas Correctas</h3>
+        <label for="correctCount">Cantidad:</label>
         <input type="number" id="correctCount" placeholder="Ingrese la cantidad">
-        <label for="correctValue">Valor de Respuestas Correctas:</label>
+        <label for="correctValue">Valor:</label>
         <input type="number" id="correctValue" placeholder="Ingrese el valor">
-        <label for="incorrectCount">Cantidad de Respuestas Incorrectas:</label>
+        <h3>Preguntas Incorrectas</h3>
+        <label for="incorrectCount">Cantidad:</label>
         <input type="number" id="incorrectCount" placeholder="Ingrese la cantidad">
-        <label for="incorrectValue">Valor de Respuestas Incorrectas:</label>
+        <label for="incorrectValue">Valor:</label>
         <input type="number" id="incorrectValue" placeholder="Ingrese el valor">
         <button onclick="calculateScore()">Calcular Puntaje</button>
         <br>
