@@ -102,10 +102,15 @@
             // Calculamos los puntajes
             const scoreCorrect = correctValue * correctCount;
             const scoreIncorrect = incorrectValue * incorrectCount;
+            let finalScore = scoreCorrect - scoreIncorrect;
 
-            // Mostramos los resultados en la pantalla
-            document.getElementById('scoreCorrect').textContent = scoreCorrect;
-            document.getElementById('scoreIncorrect').textContent = scoreIncorrect;
+            // Si el puntaje final es negativo, lo establecemos en 0
+            if (finalScore < 0) {
+                finalScore = 0;
+            }
+
+            // Mostramos el resultado en la pantalla
+            document.getElementById('finalScore').textContent = finalScore;
         }
     </script>
 </body>
