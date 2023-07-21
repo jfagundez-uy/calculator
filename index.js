@@ -3,7 +3,74 @@
 <head>
     <title>Calculadora de Puntaje de Examen</title>
     <style>
-        /* Agrega estilos CSS aquí para dar formato a la calculadora */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f1f1f1;
+            text-align: center;
+            margin: 20px;
+        }
+        
+        .calculator {
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        h2 {
+            color: #444;
+            margin-bottom: 20px;
+        }
+        
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+            color: #666;
+        }
+        
+        input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+        }
+        
+        button:hover {
+            background-color: #45a049;
+        }
+        
+        h3 {
+            margin-top: 30px;
+            color: #444;
+        }
+        
+        p {
+            margin: 10px 0;
+            color: #666;
+        }
+        
+        span {
+            font-weight: bold;
+            color: #333;
+        }
+
     </style>
 </head>
 <body>
